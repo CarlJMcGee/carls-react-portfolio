@@ -28,6 +28,22 @@ body {
   background-color: var(--secondary-dark);
 }
 
+.primary-base {
+  color: var(--primary-base);
+}
+.primary-dark {
+  color: var(--primary-dark);
+}
+.primary-alt {
+  color: var(--primary-alt);
+}
+.secondary-light {
+  color: var(--secondary-light);
+}
+.secondary-dark {
+  color: var(--secondary-dark);
+}
+
 .App {
   text-align: center;
 }
