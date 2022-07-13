@@ -1,5 +1,4 @@
-import { useState } from "react";
-import logo from "./logo.svg";
+import React, { useState } from "react";
 import "./App.css";
 import Header from "./components/Header";
 import About from "./components/About";
@@ -8,7 +7,8 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 function App() {
-  const [navCurrentSelect, navChangeSelect] = useState("About Me");
+  const sess = localStorage.getItem("navCurrent") || "About Me";
+  const [navCurrentSelect, navChangeSelect] = useState(sess);
 
   return (
     <div>

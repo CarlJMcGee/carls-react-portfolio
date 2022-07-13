@@ -1,10 +1,8 @@
 import React, { useEffect } from "react";
+import { IHeaderProps } from "../Header";
 
 export interface INavProps {
-  nav: {
-    navCurrentSelect: string;
-    navChangeSelect: React.Dispatch<React.SetStateAction<string>>;
-  };
+  nav: IHeaderProps;
 }
 
 export default function Nav(props: INavProps) {
@@ -19,6 +17,7 @@ export default function Nav(props: INavProps) {
 
   useEffect(() => {
     document.title = navCurrentSelect;
+    localStorage.setItem("navCurrent", navCurrentSelect);
   }, [navCurrentSelect]);
 
   return (
@@ -26,27 +25,35 @@ export default function Nav(props: INavProps) {
       <h2 className="column title primary-dark m-3">
         The Works of <br /> Carl McGee
       </h2>
-      <a
-        className="column has-text-white has-text-weight-bold"
+      <h3
+        className={`${navCurrentSelect === "About Me" && "nav-item-selected"} ${
+          navCurrentSelect !== "About Me" && "nav-item"
+        } column has-text-weight-bold`}
         id="about"
         onClick={(e) => navSelect(e)}
       >
         About Me
-      </a>
-      <a
-        className="column has-text-white has-text-weight-bold"
+      </h3>
+      <h3
+        className={`${
+          navCurrentSelect === "Previous Work" && "nav-item-selected"
+        } ${
+          navCurrentSelect !== "Previous Work" && "nav-item"
+        } column has-text-weight-bold`}
         id="work"
         onClick={(e) => navSelect(e)}
       >
         Previous Work
-      </a>
-      <a
-        className="column has-text-white has-text-weight-bold"
+      </h3>
+      <h3
+        className={`${navCurrentSelect === "Contact" && "nav-item-selected"} ${
+          navCurrentSelect !== "Contact" && "nav-item"
+        } column has-text-weight-bold`}
         id="contact"
         onClick={(e) => navSelect(e)}
       >
         Contact
-      </a>
+      </h3>
     </header>
   );
 }

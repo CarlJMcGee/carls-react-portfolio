@@ -48,8 +48,26 @@ body {
   color: var(--secondary-dark);
 }
 
-.foot {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+.project {
+  position: relative;
+  top: 5rem;
+  visibility: hidden;
+}
+
+.project-container:hover .project {
+  visibility: visible;
+}
+
+.nav-item {
+  color: white;
+}
+
+.nav-item-selected {
+  color: var(--primary-base);
+}
+
+.nav-item:hover {
+  color: var(--primary-base);
+  background-color: var(--secondary-dark);
+  border-radius: 10px;
 }
