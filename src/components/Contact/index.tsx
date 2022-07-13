@@ -24,7 +24,7 @@ export default function Contact(props: IContactProps) {
 
   const msgVal = (msg: string): boolean => {
     const val = msg !== null && msg !== "" ? true : false;
-    val ? setErrMsg(``) : setErrMsg(`Must Enter A Message`);
+    val ? setErrMsg(``) : setErrMsg(`Must Enter a Message`);
     return val;
   };
 
@@ -55,23 +55,33 @@ export default function Contact(props: IContactProps) {
         className="column columns is-5 is-multiline is-centered"
         onSubmit={sendMessage}
       >
-        <input
-          className="input column is-full m-2"
-          type="text"
-          id="name"
-          placeholder="Full Name"
-          ref={nameRef}
-          onBlur={(e) => nameVal(e.target.value)}
-        />
+        <div className="column columns is-full m-2">
+          <label htmlFor="name">
+            <i className="column fi fi-rr-user"></i>
+          </label>
+          <input
+            className="input column"
+            type="text"
+            id="name"
+            placeholder="Full Name"
+            ref={nameRef}
+            onBlur={(e) => nameVal(e.target.value)}
+          />
+        </div>
 
-        <input
-          className="input column is-full m-2"
-          type="text"
-          id="email"
-          placeholder="Email"
-          ref={emailRef}
-          onBlur={(e) => emailVal(e.target.value)}
-        />
+        <div className="column columns is-full m-2">
+          <label htmlFor="email">
+            <i className="column fi fi-rr-envelope"></i>
+          </label>
+          <input
+            className="input column"
+            type="text"
+            id="email"
+            placeholder="Email"
+            ref={emailRef}
+            onBlur={(e) => emailVal(e.target.value)}
+          />
+        </div>
         <textarea
           className="textarea column is-full m-2"
           id="message"
@@ -79,7 +89,9 @@ export default function Contact(props: IContactProps) {
           ref={msgRef}
           onBlur={(e) => msgVal(e.target.value)}
         ></textarea>
-        <p className="column is-full has-text-danger">{valErrMsg}</p>
+        <p className="column is-full has-text-danger has-text-weight-bold">
+          {valErrMsg}
+        </p>
         <input
           className="button column is-8 m-2 p-2"
           type="submit"

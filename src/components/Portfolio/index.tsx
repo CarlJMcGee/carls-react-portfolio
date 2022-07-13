@@ -23,7 +23,7 @@ export default function Portfolio(props: IPortfolioProps) {
         repo={"https://github.com/CarlJMcGee/Project-2_Neighborhood-group-chat"}
       />
       <Project
-        title={"Project 1"}
+        title={"Project 2"}
         imageLink={"https://via.placeholder.com/500"}
         link={
           "https://github.com/CarlJMcGee/Project-2_Neighborhood-group-chat/blob/main/public/images/nascreenshot.png"
@@ -31,7 +31,7 @@ export default function Portfolio(props: IPortfolioProps) {
         repo={"https://github.com/CarlJMcGee/Project-2_Neighborhood-group-chat"}
       />
       <Project
-        title={"Project 1"}
+        title={"Project 3"}
         imageLink={"https://via.placeholder.com/500"}
         link={
           "https://github.com/CarlJMcGee/Project-2_Neighborhood-group-chat/blob/main/public/images/nascreenshot.png"
@@ -39,7 +39,7 @@ export default function Portfolio(props: IPortfolioProps) {
         repo={"https://github.com/CarlJMcGee/Project-2_Neighborhood-group-chat"}
       />
       <Project
-        title={"Project 1"}
+        title={"Project 4"}
         imageLink={"https://via.placeholder.com/500"}
         link={
           "https://github.com/CarlJMcGee/Project-2_Neighborhood-group-chat/blob/main/public/images/nascreenshot.png"
