@@ -10,18 +10,34 @@ function App() {
   const sess = localStorage.getItem("navCurrent") || "About Me";
   const [navCurrentSelect, navChangeSelect] = useState(sess);
 
+  const renderPage = () => {
+    switch (navCurrentSelect) {
+      case "About Me":
+        return <About />;
+        break;
+
+      case "Previous Work":
+        return <Portfolio />;
+        break;
+
+      case "Contact":
+        return <Contact />;
+        break;
+
+      default:
+        return "";
+        break;
+    }
+  };
+
   return (
     <div>
       <Header
         navCurrentSelect={navCurrentSelect}
         navChangeSelect={navChangeSelect}
-      ></Header>
-      <main>
-        {navCurrentSelect === "About Me" ? <About /> : ""}
-        {navCurrentSelect === "Previous Work" ? <Portfolio /> : ""}
-        {navCurrentSelect === "Contact" ? <Contact /> : ""}
-      </main>
-      <Footer></Footer>
+      />
+      <main>{renderPage()}</main>
+      <Footer />
     </div>
   );
 }
