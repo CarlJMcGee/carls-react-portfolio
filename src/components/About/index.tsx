@@ -1,5 +1,5 @@
 import * as React from "react";
-import headshot from "../../assets/headshot.png";
+import headshot from "./assets/headshot.png";
 export interface IAboutProps {}
 
 export default function About(props: IAboutProps) {
