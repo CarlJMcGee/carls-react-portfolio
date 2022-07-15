@@ -1,11 +1,13 @@
 .project-screenshot {
   width: 100%;
+  transition: filter 0.2s;
 }
 
 .project {
   position: relative;
   top: 5rem;
   opacity: 0;
+  transition: opacity 0.3s;
 }
 
 .project-container:hover .project {
