@@ -53,14 +53,22 @@ export default function Portfolio(props: IPortfolioProps) {
   ];
 
   return (
-    <div className="block columns is-multiline m-6">
+    <div
+      className={`block columns is-multiline ${
+        window.innerWidth >= 550 ? "m-6" : "m-0"
+      }`}
+    >
       <div className="column is-1 pt-3">
-        <button
-          className="button column p-1"
-          onClick={(e) => setView(viewToggle())}
-        >
-          {view}
-        </button>
+        {window.innerWidth >= 770 ? (
+          <button
+            className="button column p-1"
+            onClick={(e) => setView(viewToggle())}
+          >
+            {view}
+          </button>
+        ) : (
+          ""
+        )}
       </div>
       <h3 className="title column is-10 m-0">Portfolio:</h3>
       {projects.map(({ title, imageLink, link, repo }) => (
