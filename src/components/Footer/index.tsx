@@ -9,12 +9,15 @@ export default function Footer(props: IFooterProps) {
 
   return (
     <footer className="footer columns is-centered is-vcentered bg-primary-dark">
-      <div className="column is-2 columns">
-        <a className="column" href="https://github.com/CarlJMcGee">
+      <div className="column is-2 columns is-mobile is-centered">
+        <a
+          className={`column ${window.innerWidth >= 550 ? "" : "is-3"}`}
+          href="https://github.com/CarlJMcGee"
+        >
           <img src={githubLogo} alt="github logo with link" width={"50px"} />
         </a>
         <a
-          className="column"
+          className={`column ${window.innerWidth >= 550 ? "" : "is-3"}`}
           href="https://www.linkedin.com/in/carl-mcgee-3b9648a0/"
         >
           <img src={linkedinLogo} alt="" width={"50px"} />
