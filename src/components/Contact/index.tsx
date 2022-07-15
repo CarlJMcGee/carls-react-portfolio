@@ -36,7 +36,7 @@ export default function Contact(props: IContactProps) {
     }
 
     if (!nameRef.current || !emailRef.current || !msgRef) {
-      return console.log(`Message package wraping failed`);
+      return console.log(`Message package wrap failed`);
     }
     const message = {
       name: nameRef.current?.value,

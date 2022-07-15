@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { IHeaderProps } from "../Header";
+import { IHeaderProps } from "..";
 
 export interface INavProps {
   nav: IHeaderProps;
@@ -25,7 +25,8 @@ export default function Nav(props: INavProps) {
       <h2 className="column title primary-dark m-3">
         The Works of <br /> Carl McGee
       </h2>
-      <h3
+      <a
+        href="#about"
         className={`${navCurrentSelect === "About Me" && "nav-item-selected"} ${
           navCurrentSelect !== "About Me" && "nav-item"
         } column has-text-weight-bold`}
@@ -33,8 +34,9 @@ export default function Nav(props: INavProps) {
         onClick={(e) => navSelect(e)}
       >
         About Me
-      </h3>
-      <h3
+      </a>
+      <a
+        href="#portfolio"
         className={`${
           navCurrentSelect === "Previous Work" && "nav-item-selected"
         } ${
@@ -44,8 +46,9 @@ export default function Nav(props: INavProps) {
         onClick={(e) => navSelect(e)}
       >
         Previous Work
-      </h3>
-      <h3
+      </a>
+      <a
+        href="#contact"
         className={`${navCurrentSelect === "Contact" && "nav-item-selected"} ${
           navCurrentSelect !== "Contact" && "nav-item"
         } column has-text-weight-bold`}
@@ -53,7 +56,7 @@ export default function Nav(props: INavProps) {
         onClick={(e) => navSelect(e)}
       >
         Contact
-      </h3>
+      </a>
     </header>
   );
 }

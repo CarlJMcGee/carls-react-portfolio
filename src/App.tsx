@@ -14,19 +14,15 @@ function App() {
     switch (navCurrentSelect) {
       case "About Me":
         return <About />;
-        break;
 
       case "Previous Work":
         return <Portfolio />;
-        break;
 
       case "Contact":
         return <Contact />;
-        break;
 
       default:
         return "";
-        break;
     }
   };
 
