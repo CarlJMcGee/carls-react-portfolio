@@ -41,28 +41,29 @@ export default function Portfolio(props: IPortfolioProps) {
       <Project
         title={"Geo Chat Neighborhoods"}
         imageLink={project2}
-        link={
-          "https://github.com/CarlJMcGee/Project-2_Neighborhood-group-chat/blob/main/public/images/nascreenshot.png"
-        }
+        link={"https://geo-chat-neighborhoods.herokuapp.com/homepage"}
         repo={"https://github.com/CarlJMcGee/Project-2_Neighborhood-group-chat"}
         viewState={view}
       />
       <Project
         title={"Blog"}
         imageLink={project3}
-        link={
-          "https://github.com/CarlJMcGee/Project-2_Neighborhood-group-chat/blob/main/public/images/nascreenshot.png"
-        }
-        repo={"https://github.com/CarlJMcGee/Project-2_Neighborhood-group-chat"}
+        link={"https://carls-tech-blog.herokuapp.com/"}
+        repo={"https://github.com/CarlJMcGee/Carls-Tech-Blog"}
         viewState={view}
       />
       <Project
         title={"Weather Dashboard"}
         imageLink={project4}
-        link={
-          "https://github.com/CarlJMcGee/Project-2_Neighborhood-group-chat/blob/main/public/images/nascreenshot.png"
-        }
-        repo={"https://github.com/CarlJMcGee/Project-2_Neighborhood-group-chat"}
+        link={"https://carljmcgee.github.io/Weather-Dashboard/"}
+        repo={"https://github.com/CarlJMcGee/Weather-Dashboard"}
+        viewState={view}
+      />
+      <Project
+        title={"Readme Generator"}
+        imageLink={project5}
+        link={"https://github.com/CarlJMcGee/Challenge-9_README-Generator"}
+        repo={"https://github.com/CarlJMcGee/Challenge-9_README-Generator"}
         viewState={view}
       />
     </div>
