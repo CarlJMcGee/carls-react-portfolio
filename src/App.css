@@ -49,16 +49,6 @@ body {
   color: var(--secondary-dark);
 }
 
-.project {
-  position: relative;
-  top: 5rem;
-  visibility: hidden;
-}
-
-.project-container:hover .project {
-  visibility: visible;
-}
-
 .nav-item {
   color: white;
 }
