@@ -2,7 +2,9 @@ import * as React from "react";
 import { ProjectDetails } from "..";
 import "./style.css";
 
-export interface IProjectProps extends ProjectDetails {}
+export interface IProjectProps extends ProjectDetails {
+  viewState: string;
+}
 
 export default function Project(props: IProjectProps) {
   const { title, imageLink, link, repo, viewState } = props;

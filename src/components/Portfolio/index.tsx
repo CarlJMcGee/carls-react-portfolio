@@ -13,12 +13,44 @@ export interface ProjectDetails {
   imageLink: string;
   link: string;
   repo: string;
-  viewState: string;
 }
 
 export default function Portfolio(props: IPortfolioProps) {
   const [view, setView] = React.useState("Gallery");
   const viewToggle = () => (view === "Gallery" ? "Detail" : "Gallery");
+
+  const projects: ProjectDetails[] = [
+    {
+      title: "Avatar Legends Unofficial Online Character Sheet",
+      imageLink: project1,
+      link: "https://avatar-charactersheet.herokuapp.com/",
+      repo: "https://github.com/CarlJMcGee/Project-2_Neighborhood-group-chat",
+    },
+    {
+      title: "Geo Chat Neighborhoods",
+      imageLink: project2,
+      link: "https://geo-chat-neighborhoods.herokuapp.com/homepage",
+      repo: "https://github.com/CarlJMcGee/Project-2_Neighborhood-group-chat",
+    },
+    {
+      title: "Blog",
+      imageLink: project3,
+      link: "https://carls-tech-blog.herokuapp.com/",
+      repo: "https://github.com/CarlJMcGee/Carls-Tech-Blog",
+    },
+    {
+      title: "Weather Dashboard",
+      imageLink: project4,
+      link: "https://carljmcgee.github.io/Weather-Dashboard/",
+      repo: "https://github.com/CarlJMcGee/Weather-Dashboard",
+    },
+    {
+      title: "Readme Generator",
+      imageLink: project5,
+      link: "https://github.com/CarlJMcGee/Challenge-9_README-Generator",
+      repo: "https://github.com/CarlJMcGee/Challenge-9_README-Generator",
+    },
+  ];
 
   return (
     <div className="block columns is-multiline m-6">
@@ -31,41 +63,16 @@ export default function Portfolio(props: IPortfolioProps) {
         </button>
       </div>
       <h3 className="title column is-10 m-0">Portfolio:</h3>
-      <Project
-        title={"Avatar Legends Unofficial Online Character Sheet"}
-        imageLink={project1}
-        link={"https://avatar-charactersheet.herokuapp.com/"}
-        repo={"https://github.com/CarlJMcGee/Project-2_Neighborhood-group-chat"}
-        viewState={view}
-      />
-      <Project
-        title={"Geo Chat Neighborhoods"}
-        imageLink={project2}
-        link={"https://geo-chat-neighborhoods.herokuapp.com/homepage"}
-        repo={"https://github.com/CarlJMcGee/Project-2_Neighborhood-group-chat"}
-        viewState={view}
-      />
-      <Project
-        title={"Blog"}
-        imageLink={project3}
-        link={"https://carls-tech-blog.herokuapp.com/"}
-        repo={"https://github.com/CarlJMcGee/Carls-Tech-Blog"}
-        viewState={view}
-      />
-      <Project
-        title={"Weather Dashboard"}
-        imageLink={project4}
-        link={"https://carljmcgee.github.io/Weather-Dashboard/"}
-        repo={"https://github.com/CarlJMcGee/Weather-Dashboard"}
-        viewState={view}
-      />
-      <Project
-        title={"Readme Generator"}
-        imageLink={project5}
-        link={"https://github.com/CarlJMcGee/Challenge-9_README-Generator"}
-        repo={"https://github.com/CarlJMcGee/Challenge-9_README-Generator"}
-        viewState={view}
-      />
+      {projects.map(({ title, imageLink, link, repo }) => (
+        <Project
+          key={title}
+          title={title}
+          link={link}
+          imageLink={imageLink}
+          repo={repo}
+          viewState={view}
+        />
+      ))}
     </div>
   );
 }
