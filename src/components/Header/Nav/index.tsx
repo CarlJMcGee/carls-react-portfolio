@@ -57,6 +57,16 @@ export default function Nav(props: INavProps) {
       >
         Contact
       </a>
+      <a
+        href="#resume"
+        className={`${navCurrentSelect === "Resume" && "nav-item-selected"} ${
+          navCurrentSelect !== "Resume" && "nav-item"
+        } column has-text-weight-bold`}
+        id="resume"
+        onClick={(e) => navSelect(e)}
+      >
+        Resume
+      </a>
     </header>
   );
 }
