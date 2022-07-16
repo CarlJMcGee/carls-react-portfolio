@@ -1,6 +1,7 @@
 {
   "name": "carls-react-portfolio",
   "version": "0.1.0",
+  "homepage": "http://CarlJMcGee.github.io/carls-react-portfolio",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
