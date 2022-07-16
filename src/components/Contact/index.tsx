@@ -36,7 +36,7 @@ export default function Contact(props: IContactProps) {
     }
 
     if (!nameRef.current || !emailRef.current || !msgRef) {
-      return console.log(`Message package wrap failed`);
+      return console.log(`Message package wraping failed`);
     }
     const message = {
       name: nameRef.current?.value,
@@ -48,16 +48,16 @@ export default function Contact(props: IContactProps) {
   };
 
   return (
-    <div className="block columns is-multiline m-6">
-      <h3 className="title column is-full">Get in Touch:</h3>
+    <div className="block columns is-multiline m-6 is-centered">
+      <h3 className="title column is-full has-text-centered">Get in Touch:</h3>
       <form
         action=""
-        className="column columns is-5 is-multiline is-centered"
+        className="column columns is-5 is-multiline is-centered is-mobile"
         onSubmit={sendMessage}
       >
-        <div className="column columns is-full m-2">
-          <label htmlFor="name">
-            <i className="column fi fi-rr-user"></i>
+        <div className="column columns is-full m-2 is-mobile">
+          <label htmlFor="name" className={`column is-1 px-0`}>
+            <i className="fi fi-rr-user"></i>
           </label>
           <input
             className="input column"
@@ -69,9 +69,9 @@ export default function Contact(props: IContactProps) {
           />
         </div>
 
-        <div className="column columns is-full m-2">
-          <label htmlFor="email">
-            <i className="column fi fi-rr-envelope"></i>
+        <div className="column columns is-full m-2 is-mobile">
+          <label htmlFor="email" className={`column is-1 px-0`}>
+            <i className="fi fi-rr-envelope"></i>
           </label>
           <input
             className="input column"
