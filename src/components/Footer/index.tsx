@@ -1,6 +1,7 @@
 import * as React from "react";
 import githubLogo from "./assets/PNG/GitHub-Mark-Light-64px.png";
 import linkedinLogo from "./assets/PNG/In-White-48@2x.png";
+import leetcodeLogo from "./assets/PNG/leetcode_logo_icon_145113.png";
 
 export interface IFooterProps {}
 
@@ -20,7 +21,13 @@ export default function Footer(props: IFooterProps) {
           className={`column ${window.innerWidth >= 550 ? "" : "is-3"}`}
           href="https://www.linkedin.com/in/carl-mcgee-3b9648a0/"
         >
-          <img src={linkedinLogo} alt="" width={"50px"} />
+          <img src={linkedinLogo} alt="linked in logo" width={"50px"} />
+        </a>
+        <a
+          href="https://leetcode.com/CarlJMcGee/"
+          className={`column ${window.innerWidth >= 550 ? "" : "is-3"}`}
+        >
+          <img src={leetcodeLogo} alt="leet code logo" width={"50px"} />
         </a>
       </div>
       <h3 className="column is-2 has-text-centered">{year} Carl McGee</h3>

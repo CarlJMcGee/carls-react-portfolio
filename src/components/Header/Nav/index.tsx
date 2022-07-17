@@ -12,7 +12,6 @@ export default function Nav(props: INavProps) {
       ? event.currentTarget.textContent
       : "";
     navChangeSelect(newSelect);
-    console.log(event.currentTarget.textContent);
   };
 
   useEffect(() => {
