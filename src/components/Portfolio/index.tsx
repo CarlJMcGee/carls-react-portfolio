@@ -5,6 +5,7 @@ import project2 from "./assets/screenshot-geo-chat-neighborhoods.herokuapp.com-2
 import project3 from "./assets/screenshot-carls-tech-blog.herokuapp.com-2022.06.17-20_37_51.png";
 import project4 from "./assets/weahterdash.png";
 import project5 from "./assets/readmegen.png";
+import project6 from "./assets/petpal.png";
 
 export interface IPortfolioProps {}
 
@@ -25,6 +26,12 @@ export default function Portfolio(props: IPortfolioProps) {
       imageLink: project1,
       link: "https://avatar-charactersheet.herokuapp.com/",
       repo: "https://github.com/CarlJMcGee/Project-2_Neighborhood-group-chat",
+    },
+    {
+      title: "Pet Pals",
+      imageLink: project6,
+      link: "https://pet-pal-friend-finder.herokuapp.com/",
+      repo: "https://github.com/chrislee-webdev/pet-tinder",
     },
     {
       title: "Geo Chat Neighborhoods",
