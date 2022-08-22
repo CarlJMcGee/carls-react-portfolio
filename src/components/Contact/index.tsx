@@ -3,54 +3,61 @@ import React, { useRef, useState } from "react";
 export interface IContactProps {}
 
 export default function Contact(props: IContactProps) {
-  const [valErrMsg, setErrMsg] = useState("");
+  // const [valErrMsg, setErrMsg] = useState("");
 
-  const nameRef = useRef<HTMLInputElement | null>(null);
-  const emailRef = useRef<HTMLInputElement | null>(null);
-  const msgRef = useRef<HTMLTextAreaElement | null>(null);
+  // const nameRef = useRef<HTMLInputElement | null>(null);
+  // const emailRef = useRef<HTMLInputElement | null>(null);
+  // const msgRef = useRef<HTMLTextAreaElement | null>(null);
 
-  const nameVal = (name: string): boolean => {
-    const val = name !== null && name !== "" ? true : false;
-    val ? setErrMsg(``) : setErrMsg(`Must Enter a name`);
-    return val;
-  };
+  // const nameVal = (name: string): boolean => {
+  //   const val = name !== null && name !== "" ? true : false;
+  //   val ? setErrMsg(``) : setErrMsg(`Must Enter a name`);
+  //   return val;
+  // };
 
-  const emailVal = (email: string): boolean => {
-    const regex = /[A-Z0-9._%+-]+@[A-Z0-9-]+.+\.[A-Z]{2,4}/gim;
-    const val = regex.test(email);
-    val ? setErrMsg(``) : setErrMsg(`Must Have a Valid Email`);
-    return val;
-  };
+  // const emailVal = (email: string): boolean => {
+  //   const regex = /[A-Z0-9._%+-]+@[A-Z0-9-]+.+\.[A-Z]{2,4}/gim;
+  //   const val = regex.test(email);
+  //   val ? setErrMsg(``) : setErrMsg(`Must Have a Valid Email`);
+  //   return val;
+  // };
 
-  const msgVal = (msg: string): boolean => {
-    const val = msg !== null && msg !== "" ? true : false;
-    val ? setErrMsg(``) : setErrMsg(`Must Enter a Message`);
-    return val;
-  };
+  // const msgVal = (msg: string): boolean => {
+  //   const val = msg !== null && msg !== "" ? true : false;
+  //   val ? setErrMsg(``) : setErrMsg(`Must Enter a Message`);
+  //   return val;
+  // };
 
-  const sendMessage = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    if (!nameVal || !emailVal || !msgVal) {
-      setErrMsg(`Please Complete Form Before Submiting`);
-      return;
-    }
+  // const sendMessage = (e: React.FormEvent<HTMLFormElement>) => {
+  //   e.preventDefault();
+  //   if (!nameVal || !emailVal || !msgVal) {
+  //     setErrMsg(`Please Complete Form Before Submiting`);
+  //     return;
+  //   }
 
-    if (!nameRef.current || !emailRef.current || !msgRef) {
-      return console.log(`Message package wraping failed`);
-    }
-    const message = {
-      name: nameRef.current?.value,
-      email: emailRef.current?.value,
-      body: msgRef.current?.value,
-    };
+  //   if (!nameRef.current || !emailRef.current || !msgRef) {
+  //     return console.log(`Message package wraping failed`);
+  //   }
+  //   const message = {
+  //     name: nameRef.current?.value,
+  //     email: emailRef.current?.value,
+  //     body: msgRef.current?.value,
+  //   };
 
-    console.log(message);
-  };
+  //   console.log(message);
+  // };
 
   return (
     <div className="block columns is-multiline m-6 is-centered">
       <h3 className="title column is-full has-text-centered">Get in Touch:</h3>
-      <form
+      <p className="is-size-5 has-text-white">
+        Any questions or inquireies, you can get a hold of me at{" "}
+        <a href="mailto:Carl.Jack.McGee@gmail.com" className="secondary-light">
+          Carl.Jack.McGee@gmail
+        </a>
+      </p>
+
+      {/* <form
         action=""
         className="column columns is-5 is-multiline is-centered is-mobile"
         onSubmit={sendMessage}
@@ -97,7 +104,7 @@ export default function Contact(props: IContactProps) {
           type="submit"
           value="Send"
         />
-      </form>
+      </form> */}
     </div>
   );
 }

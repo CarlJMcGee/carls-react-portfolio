@@ -6,6 +6,7 @@ import project3 from "./assets/screenshot-carls-tech-blog.herokuapp.com-2022.06.
 import project4 from "./assets/weahterdash.png";
 import project5 from "./assets/readmegen.png";
 import project6 from "./assets/petpal.png";
+import project7 from "./assets/Screenshot 2022-08-22 at 17-56-33 Shit Screen.png";
 
 export interface IPortfolioProps {}
 
@@ -21,6 +22,12 @@ export default function Portfolio(props: IPortfolioProps) {
   const viewToggle = () => (view === "Gallery" ? "Detail" : "Gallery");
 
   const projects: ProjectDetails[] = [
+    {
+      title: "Sh*t Screen Movie Randomizer",
+      imageLink: project7,
+      link: "https://shit-screen-movie-picker.vercel.app/",
+      repo: "https://github.com/CarlJMcGee/movie-picker",
+    },
     {
       title: "Avatar Legends Unofficial Online Character Sheet",
       imageLink: project1,
