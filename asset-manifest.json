@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/carls-react-portfolio/static/css/main.30a7fc14.css",
-    "main.js": "/carls-react-portfolio/static/js/main.338b16a7.js",
+    "main.js": "/carls-react-portfolio/static/js/main.fc907cf2.js",
     "static/js/787.03ef283d.chunk.js": "/carls-react-portfolio/static/js/787.03ef283d.chunk.js",
     "static/media/headshot.png": "/carls-react-portfolio/static/media/headshot.a494b6901b0073f0fe44.png",
     "static/media/petpal.png": "/carls-react-portfolio/static/media/petpal.3f2675787a52b7ebfe38.png",
     "static/media/readmegen.png": "/carls-react-portfolio/static/media/readmegen.3294ee2335d345d9739b.png",
+    "static/media/Screenshot 2022-08-22 at 17-56-33 Shit Screen.png": "/carls-react-portfolio/static/media/Screenshot 2022-08-22 at 17-56-33 Shit Screen.8f3ea6e433ae9b4590ff.png",
     "static/media/screenshot-carls-tech-blog.herokuapp.com-2022.06.17-20_37_51.png": "/carls-react-portfolio/static/media/screenshot-carls-tech-blog.herokuapp.com-2022.06.17-20_37_51.bdc3b1c35a02e0647621.png",
     "static/media/avatarlegends.png": "/carls-react-portfolio/static/media/avatarlegends.eea022b90bddd1a28652.png",
     "static/media/screenshot-geo-chat-neighborhoods.herokuapp.com-2022.06.17-20_27_37.png": "/carls-react-portfolio/static/media/screenshot-geo-chat-neighborhoods.herokuapp.com-2022.06.17-20_27_37.e8a12343c4c1987c1a74.png",
@@ -13,11 +14,11 @@
     "static/media/Resume-2022.pdf": "/carls-react-portfolio/static/media/Resume-2022.b08ea77df8e8e44af343.pdf",
     "index.html": "/carls-react-portfolio/index.html",
     "main.30a7fc14.css.map": "/carls-react-portfolio/static/css/main.30a7fc14.css.map",
-    "main.338b16a7.js.map": "/carls-react-portfolio/static/js/main.338b16a7.js.map",
+    "main.fc907cf2.js.map": "/carls-react-portfolio/static/js/main.fc907cf2.js.map",
     "787.03ef283d.chunk.js.map": "/carls-react-portfolio/static/js/787.03ef283d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.30a7fc14.css",
-    "static/js/main.338b16a7.js"
+    "static/js/main.fc907cf2.js"
   ]
 }
