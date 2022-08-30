@@ -32,11 +32,28 @@ export default function Resume(props: IResumeProps) {
         </li>
         <li>Quick to pick up on new ideas and information </li>
         <li>
-          Proficient in HTML, CSS, Javascript, JQuery, Express servers via Node
-          JS, MySQL using Sequelize, and MongoDB using Mongoose, and React
-        </li>
-        <li>
-          Capable of producing full stack applications using MVP practices
+          Proficient in:
+          <br />
+          <span className="has-text-weight-bold m-3  secondary-light">
+            Software:
+          </span>{" "}
+          VS Code, TRPC, NextAuth, Postman, GraphQL Playground, Browser
+          Developer Tools
+          <br />
+          <span className="has-text-weight-bold m-3 secondary-light">
+            Websites:
+          </span>{" "}
+          Github, Gitlab, Heroku, Vercel, Planetscale, MongoAtlas Tech
+          <br />
+          <span className="has-text-weight-bold m-3 secondary-light">
+            Stacks:
+          </span>{" "}
+          T3 Stack, MERN CSS-in-JS: Bootstrap, Bulma, Tailwind
+          <br />
+          <span className="has-text-weight-bold m-3 secondary-light">
+            Languages/Syntax:
+          </span>{" "}
+          HTML 5, CSS, Java/Type Script, JQuery, React, Next.js, Prisma, SQL
         </li>
       </ol>
     </div>
