@@ -37,7 +37,7 @@ export default function About(props: IAboutProps) {
         My background using donor management systems working in blood collection
         informs my decisions in creating positive experiences when using my web
         apps. When in the public health field, the end user should not have to
-        think about the software they’re using as they work with donors and
+        think about the software they're using as they work with donors and
         hospitals. My main objective in creating any application is to have the
         users think about the app as little as possible with clean and clear UI,
         responsive interfaces, and intuitive UX.
