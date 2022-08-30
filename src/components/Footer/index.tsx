@@ -23,12 +23,6 @@ export default function Footer(props: IFooterProps) {
         >
           <img src={linkedinLogo} alt="linked in logo" width={"50px"} />
         </a>
-        <a
-          href="https://leetcode.com/CarlJMcGee/"
-          className={`column ${window.innerWidth >= 550 ? "" : "is-3"}`}
-        >
-          <img src={leetcodeLogo} alt="leet code logo" width={"50px"} />
-        </a>
       </div>
       <h3 className="column is-2 has-text-centered">{year} Carl McGee</h3>
     </footer>
