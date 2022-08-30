@@ -21,11 +21,26 @@ export default function About(props: IAboutProps) {
         five year career in Phlebotomy and blood product donation to persue a
         career in web development and I'm ready to take on new opportunities and
         challenges.
-        <br /> <br />I am experienced in using HTML, CSS, Javascript, and
-        Typescript to create mobile first progressive web apps within a MVC
-        standard and within React. I'm ready and excited to continue expanding
-        on my development prowess in both the aformentioned frameworks and
-        beyond. Check out some of my work!
+        <br />
+        <br />
+        I have recently received a Full Stack Web Development certificate from
+        the University of Minnesota Coding Bootcamp program. There I gained
+        experience working with MVC and Progressive Javascript and Typescript
+        web applications in both vanilla JS using Handlebars and single-page
+        sites with React and Next.js. I am proficient in using MySQL and
+        sequelize, MongoDB and Mongoose, Prisma, tRPC, GraphQL, Express.js
+        servers, Next.js with and without a server, Next Auth, Tailwind,
+        Bootstrap and Bulma CSS libraries, server session store and client JSON
+        Web Tokens, and Jest unit testing.
+        <br />
+        <br />
+        My background using donor management systems working in blood collection
+        informs my decisions in creating positive experiences when using my web
+        apps. When in the public health field, the end user should not have to
+        think about the software they’re using as they work with donors and
+        hospitals. My main objective in creating any application is to have the
+        users think about the app as little as possible with clean and clear UI,
+        responsive interfaces, and intuitive UX.
       </p>
     </section>
   );
