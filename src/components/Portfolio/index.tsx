@@ -45,7 +45,7 @@ export default function Portfolio(props: IPortfolioProps) {
     {
       title: "Pet Pals",
       imageLink: project6,
-      link: "https://pet-pal-friend-finder.herokuapp.com/",
+      link: "https://pet-tinder-production.up.railway.app/",
       repo: "https://github.com/chrislee-webdev/pet-tinder",
       description:
         "Pet Pal is a full-stack web application that allows pet parents to find new pals for their pets to play with. Joining is free, and all you have to do is create your own profile and set up your username and password. Once users have created their account, they can add their animal and start searching for new pet pals for your pet pal",
@@ -63,7 +63,7 @@ export default function Portfolio(props: IPortfolioProps) {
     {
       title: "Blog",
       imageLink: project3,
-      link: "https://carls-tech-blog.herokuapp.com/",
+      link: "https://carls-tech-blog-production.up.railway.app/",
       repo: "https://github.com/CarlJMcGee/Carls-Tech-Blog",
       description: "A blog for random thoughts and ideas I have",
       tech: "Javascript, Express, Handlebars, mySQL, Sequelize",
