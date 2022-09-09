@@ -36,7 +36,7 @@ export default function Portfolio(props: IPortfolioProps) {
     {
       title: "Avatar Legends Unofficial Online Character Sheet",
       imageLink: project1,
-      link: "https://avatar-charactersheet.herokuapp.com/",
+      link: "https://avatar-legends-character-sheet-production.up.railway.app/",
       repo: "https://github.com/CarlJMcGee/Project-2_Neighborhood-group-chat",
       description:
         "An unofficial online character sheet alternative for the Avatar the Last Airbender tabletop RPG by Magpie Games.",
@@ -54,7 +54,7 @@ export default function Portfolio(props: IPortfolioProps) {
     {
       title: "Geo Chat Neighborhoods",
       imageLink: project2,
-      link: "https://geo-chat-neighborhoods.herokuapp.com/homepage",
+      link: "https://geo-chatneighborhood-group-chat-production.up.railway.app/",
       repo: "https://github.com/CarlJMcGee/Project-2_Neighborhood-group-chat",
       description:
         "A site for locals to connect and socialize online with the people living around them. Sign up with your city name and be automatically added to your neighborhood’s homepage",
